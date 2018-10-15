@@ -20,7 +20,7 @@ app.get('/factbook/:id', function(req, res) {
 app.set('json spaces', 2);
 
 app.listen(3000, function() {
-    console.log('Example app listening on port 3000!');
+    console.log('Example app listening on port 3000!')
 })
 
 .catch((error) => {
