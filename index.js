@@ -1,8 +1,7 @@
 var express = require('express')
 var app = express()
 var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('localhost:27017/factwings');
+var db = mongo('localhost:27017/factwings');
 
 app.use(function(req, res, next) {
     req.db = db;
