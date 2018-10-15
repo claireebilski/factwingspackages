@@ -22,3 +22,8 @@ app.set('json spaces', 2);
 app.listen(3000, function() {
     console.log('Example app listening on port 3000!');
 })
+
+.catch((error) => {
+  assert.isNotOk(error,'Promise error');
+  done();
+});
